@@ -6,10 +6,12 @@ import {
     Tabs,
     Tab,
     Stack,
+    Divider,
 } from "@mui/material";
 import Image from 'next/image';
 import CellPhone from "../../public/assets/CellPhone.png";
 import Portrait from "../../public/assets/Portrait.png";
+import { Diversity1 } from '@mui/icons-material';
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -49,6 +51,11 @@ export default function QuickFacts() {
     return (
         <Box sx={{ width: '100%', marginTop: 10, backgroundColor: '#F4F4F4', borderRadius: 2, padding: 2 }}>
             {/* Tabs Section */}
+            <Divider   sx={{ 
+            height: 3, 
+            backgroundColor: "black",
+            opacity: 1
+          }} />
             <Tabs
                 value={value}
                 onChange={handleChange}
@@ -137,9 +144,9 @@ export default function QuickFacts() {
                             justifyContent: "flex-end"
                         }}
                     >
-                        <Box sx={{ p: 2, borderRadius: 1, width: '30%' }}>
-                            <Typography variant="h1" component="p" sx={{ marginRight: 1 }}>4</Typography>
-                            <Typography variant="h2" component="p">years of building scalable & high-performance web apps.</Typography>
+                        <Box sx={{ p: 2, borderRadius: 1, width: '30%', display: "flex", alignItems: "start" }}>
+                            <Typography component="p" sx={{ marginRight: 2, fontSize: "200px", color: "#A28664"}}>4</Typography>
+                            <Typography variant="h3" component="p">years of building scalable & high-performance web apps.</Typography>
                         </Box>
                         <Box sx={{ p: 2, borderRadius: 1, width: '30%' }}>
                             <Typography variant="body1">With a passion for clean code and intuitive design, I have built web applications that not only function seamlessly but also provide exceptional user experiences.

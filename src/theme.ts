@@ -9,7 +9,35 @@ const roboto = Roboto({
 });
 
 const theme = createTheme({
-  colorSchemes: { light: true, dark: true },
+  colorSchemes: {
+    light: {
+      palette: {
+        primary: {
+          main: '#0000FF',
+        },
+        // secondary: {
+        //   main: '#FBC02D',
+        // },
+        // background: {
+        //   default: '#fdfdfd',
+        // },
+      },
+    },
+    dark: {
+      palette: {
+        mode: 'dark',
+        primary: {
+          main: '#D90000',
+        },
+        // secondary: {
+        //   main: '#FBC02D',
+        // },
+        // background: {
+        //   default: '#1e1419',
+        // },
+      },
+    },
+  },
   cssVariables: {
     colorSchemeSelector: 'class',
   },
@@ -17,6 +45,18 @@ const theme = createTheme({
     fontFamily: roboto.style.fontFamily,
   },
   components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        '.app-background': {
+          backgroundImage: `url('/assets/pattern.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed',
+          minHeight: 'calc(100vh - var(--navbar-height))', // Adjust for navbar height
+          width: '100%',
+        },
+      },
+    },
     MuiAlert: {
       styleOverrides: {
         root: {
@@ -32,6 +72,6 @@ const theme = createTheme({
       },
     },
   },
-});
+})
 
 export default theme;

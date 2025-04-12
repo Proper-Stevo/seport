@@ -15,9 +15,9 @@ const theme = createTheme({
         primary: {
           main: '#0000FF',
         },
-        // secondary: {
-        //   main: '#FBC02D',
-        // },
+        secondary: {
+          main: '#000000',
+        },
         // background: {
         //   default: '#fdfdfd',
         // },
@@ -29,9 +29,9 @@ const theme = createTheme({
         primary: {
           main: '#D90000',
         },
-        // secondary: {
-        //   main: '#FBC02D',
-        // },
+        secondary: {
+          main: '#FFFFFF',
+        },
         // background: {
         //   default: '#1e1419',
         // },

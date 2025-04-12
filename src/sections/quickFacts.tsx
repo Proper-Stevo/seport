@@ -11,7 +11,6 @@ import {
 import Image from 'next/image';
 import CellPhone from "../../public/assets/CellPhone.png";
 import Portrait from "../../public/assets/Portrait.png";
-import { Diversity1 } from '@mui/icons-material';
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -51,16 +50,17 @@ export default function QuickFacts() {
     return (
         <Box sx={{ width: '100%', marginTop: 10, backgroundColor: '#F4F4F4', borderRadius: 2, padding: 2 }}>
             {/* Tabs Section */}
-            <Divider   sx={{ 
-            height: 3, 
-            backgroundColor: "black",
-            opacity: 1
-          }} />
+            <Divider sx={{
+                height: 1,
+                backgroundColor: "black",
+                opacity: 1
+            }} />
             <Tabs
                 value={value}
                 onChange={handleChange}
                 aria-label="basic tabs example"
                 textColor="inherit"
+                indicatorColor='secondary'
                 sx={{ color: 'black' }}
             >
                 <Tab label="About" {...a11yProps(0)} />
@@ -86,15 +86,15 @@ export default function QuickFacts() {
                         }}
                     >
                         <Box sx={{ p: 2, borderRadius: 1 }}>
-                            <Typography variant="body1">Hi, I’m Steven Barrios – a Full Stack Developer specializing in building high-performance web applications. With expertise in React, Next.js, and the MERN stack, I create clean, responsive, and user-friendly digital solutions.</Typography>
+                            <Typography variant="body1" sx={{ color: "black" }}>Hi, I’m Steven Barrios – a Full Stack Developer specializing in building high-performance web applications. With expertise in React, Next.js, and the MERN stack, I create clean, responsive, and user-friendly digital solutions.</Typography>
                         </Box>
                         <Box sx={{ p: 2, borderRadius: 1 }}>
-                            <Typography variant="body1">I believe in building web applications that are not just functional but also intuitive and visually compelling. Every project is an opportunity to create seamless user experiences that leave a lasting impact. <br /><br /> Speed, efficiency, and scalability are at the core of my development process. Whether it’s a startup MVP or a complex web platform, I ensure that the architecture is optimized for growth and high performance.</Typography>
+                            <Typography variant="body1" sx={{ color: "black" }}>I believe in building web applications that are not just functional but also intuitive and visually compelling. Every project is an opportunity to create seamless user experiences that leave a lasting impact. <br /><br /> Speed, efficiency, and scalability are at the core of my development process. Whether it’s a startup MVP or a complex web platform, I ensure that the architecture is optimized for growth and high performance.</Typography>
 
 
                         </Box>
                         <Box sx={{ p: 2, borderRadius: 1 }}>
-                            <Typography variant="body1">Great digital products are built through collaboration. I work closely with clients to understand their vision, turning ideas into reality through clean code, modern frameworks, and innovative solutions.</Typography>
+                            <Typography variant="body1" sx={{ color: "black" }}>Great digital products are built through collaboration. I work closely with clients to understand their vision, turning ideas into reality through clean code, modern frameworks, and innovative solutions.</Typography>
                         </Box>
                     </Stack>
 
@@ -145,13 +145,29 @@ export default function QuickFacts() {
                         }}
                     >
                         <Box sx={{ p: 2, borderRadius: 1, width: '30%', display: "flex", alignItems: "start" }}>
-                            <Typography component="p" sx={{ marginRight: 2, fontSize: "200px", color: "#A28664"}}>4</Typography>
-                            <Typography variant="h3" component="p">years of building scalable & high-performance web apps.</Typography>
+                            <Typography component="p" sx={{ marginRight: 2, fontSize: "200px", color: "#A28664" }}>4</Typography>
+                            <Typography variant="h4" component="p" sx={{ color: "black" }}>years of building scalable & high-performance web apps.</Typography>
                         </Box>
-                        <Box sx={{ p: 2, borderRadius: 1, width: '30%' }}>
-                            <Typography variant="body1">With a passion for clean code and intuitive design, I have built web applications that not only function seamlessly but also provide exceptional user experiences.
-                                <br />
-                                <br />My expertise in front-end and back-end development ensures that every project is efficient, scalable, and ready for growth.</Typography>
+                        <Box
+                            sx={{
+                                p: 2,
+                                borderRadius: 1,
+                                width: '30%',
+                                minHeight: '300px', // Set a minimum height for the box
+                                display: 'flex',    // Enable flexbox
+                                flexDirection: 'column', // Stack children vertically
+                                justifyContent: 'space-between' // Place items at the top and bottom
+                            }}
+                        >
+                            <Typography variant="body1" sx={{ color: "black" }}>
+                                With a passion for clean code and intuitive design, I have built web applications
+                                that not only function seamlessly but also provide exceptional user experiences.
+                            </Typography>
+
+                            <Typography variant="body1" sx={{ color: "black", mt: 'auto' }}>
+                                My expertise in front-end and back-end development ensures that every project
+                                is efficient, scalable, and ready for growth.
+                            </Typography>
                         </Box>
                     </Stack>
                 </Box>

@@ -9,6 +9,8 @@ import QuickFacts from '@/sections/quickFacts';
 import Projects from '@/sections/projects';
 import Services from '@/sections/services';
 import ImageSection from '@/sections/imageSection';
+import FaqSection from '@/sections/faq';
+import Contact from '@/sections/contact';
 
 
 export default function Home() {
@@ -19,6 +21,8 @@ export default function Home() {
       <Projects />
       <Services />
       <ImageSection />
+      <FaqSection />
+      <Contact />
     </Box>
   );
 }

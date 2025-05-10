@@ -9,8 +9,8 @@ import {
     Divider,
 } from "@mui/material";
 import Image from 'next/image';
-import CellPhone from "../../public/assets/CellPhone.png";
-import Portrait from "../../public/assets/Portrait.png";
+import CellPhone from "../../../public/assets/cellphone.png"
+import Portrait from "../../../public/assets/portrait.png";
 
 interface TabPanelProps {
     children?: React.ReactNode;

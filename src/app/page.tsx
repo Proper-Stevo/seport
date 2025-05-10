@@ -4,13 +4,13 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import NextLink from 'next/link';
-import Hero from '@/sections/hero';
-import QuickFacts from '@/sections/quickFacts';
-import Projects from '@/sections/projects';
-import Services from '@/sections/services';
-import ImageSection from '@/sections/imageSection';
-import FaqSection from '@/sections/faq';
-import Contact from '@/sections/contact';
+import Hero from '@/sections/home/hero';
+import QuickFacts from '@/sections/home/quickFacts';
+import Projects from '@/sections/home/projects';
+import Services from '@/sections/home/services';
+import ImageSection from '@/sections/home/imageSection';
+import FaqSection from '@/sections/home/faq';
+import Contact from '@/sections/home/contact';
 
 
 export default function Home() {

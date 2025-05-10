@@ -4,15 +4,21 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import NextLink from 'next/link';
-import AboutMeSection from '@/sections/about/meetMe';
-import Business from '@/sections/about/business';
 
 export default function About() {
   return (
-    <Box
-    >
-      <AboutMeSection />
-      <Business />
-    </Box>
+    <Container maxWidth="lg">
+      <Box
+        sx={{
+          my: 4,
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+      
+      </Box>
+    </Container>
   );
 }

@@ -13,9 +13,9 @@ import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
 
 import Image from 'next/image';
-import Restaurant from '../../public/assets/resSS.png';
-import KARRASS from '../../public/assets/KARRASS.png';
-import Space from '../../public/assets/spaceSS.png';
+import Restaurant from '../../../public/assets/resSS.png';
+import KARRASS from '../../../public/assets/KARRASS.png';
+import Space from '../../../public/assets/spaceSS.png';
 
 interface TabPanelProps {
     children?: React.ReactNode;

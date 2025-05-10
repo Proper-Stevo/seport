@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { Box, Typography } from "@mui/material";
 import Image from 'next/image';
-import Selfie from "../../public/assets/portrait.png";
+import Selfie from "../../../public/assets/portrait.png"; // Adjust the path as necessary
 
 export default function ImageSection() {
     return (

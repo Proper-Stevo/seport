@@ -21,7 +21,7 @@ const Business: React.FC = () => {
         >
           {/* Text section - left side (50%) */}
           <Box sx={{ flex: '1 1 50%' }}>
-            <Typography variant="h3" color='black'>
+            <Typography variant="h4" color='black'>
               Core Services: Building Innovative Solutions for your Business
             </Typography>
             <Typography variant="body1" color='black'>

@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import NextLink from 'next/link';
+import Intro from '@/sections/projects/intro';
 
 export default function About() {
   return (
@@ -17,7 +18,7 @@ export default function About() {
           alignItems: 'center',
         }}
       >
-      
+        <Intro />
       </Box>
     </Container>
   );

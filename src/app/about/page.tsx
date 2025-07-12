@@ -6,6 +6,10 @@ import Button from '@mui/material/Button';
 import NextLink from 'next/link';
 import AboutMeSection from '@/sections/about/meetMe';
 import Business from '@/sections/about/business';
+import Approach from '@/sections/about/approach';
+import Passion from '@/sections/about/passion';
+import Collab from '@/sections/about/collab';
+import Connect from '@/sections/about/connect';
 
 export default function About() {
   return (
@@ -13,6 +17,10 @@ export default function About() {
     >
       <AboutMeSection />
       <Business />
+      <Approach />
+      <Passion />
+      <Collab />
+      <Connect />
     </Box>
   );
 }

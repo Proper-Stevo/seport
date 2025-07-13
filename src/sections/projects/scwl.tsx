@@ -1,9 +1,9 @@
 "use client";
 import React from 'react';
 import { Box, Container, Typography, useTheme, Paper, Grid } from '@mui/material';
-import DesktopKarrass from '../../../public/assets/DesktopKarrass.png';
+import SCWLDesktop from '../../../public/assets/SCWLDesktop.png';
 
-const Karrass: React.FC = () => {
+const Restaurant: React.FC = () => {
     const theme = useTheme();
 
     return (
@@ -22,7 +22,7 @@ const Karrass: React.FC = () => {
                     sx={{
                         width: '100%',
                         height: '900px',
-                        backgroundImage: `url(${DesktopKarrass.src})`,
+                        backgroundImage: `url(${SCWLDesktop.src})`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         borderRadius: '8px',
@@ -45,7 +45,7 @@ const Karrass: React.FC = () => {
 
                             {/* Tech boxes */}
                             <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2 }}>
-                                {['React', 'TypeScript', 'Next.js', 'Tailwind.CSS', 'GraphQL'].map((tech) => (
+                                {['React', 'Next.js', 'Tailwind.CSS', 'API'].map((tech) => (
                                     <Paper
                                         key={tech}
                                         elevation={3}
@@ -65,7 +65,7 @@ const Karrass: React.FC = () => {
                         {/* Right Side */}
                         <Grid item xs={12} md={6}>
                             <Typography variant="body1" color="black">
-                                I revamped KARRASS company website using Next.js, Tailwind CSS, and various modern React libraries for a dynamic and responsive user experience. 
+                                LA Based restaurant form with Next.js, React based that includes a serverless API. Try making a reservation today! 
                             </Typography>
                         </Grid>
                     </Grid>
@@ -75,4 +75,4 @@ const Karrass: React.FC = () => {
     );
 }
 
-export default Karrass;
+export default Restaurant;
